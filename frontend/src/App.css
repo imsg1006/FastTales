@@ -391,10 +391,12 @@ button:hover {
 .error-message button:hover {
   background-color: #d32f2f;
 }
-.word-spacing .inline-block {
-  margin-right: 0.75rem; /* adjust spacing */
+.word-spacing span {
+  display: inline-block;    
+  margin-right: 0.75rem;   
 }
 
-.word-spacing .inline-block:last-child {
-  margin-right: 0;
+.word-spacing span:last-child {
+  margin-right: 0;          
 }
+
