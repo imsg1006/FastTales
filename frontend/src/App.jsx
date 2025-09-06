@@ -1,14 +1,15 @@
 import './App.css'
 import {BrowserRouter as Router , Route , Routes} from 'react-router-dom'
-import StoryLoader from './componenets/StoryLoader'
-import StoryGenerator from './componenets/StoryGenerator'
+import StoryLoader from './components/StoryLoader'
+import StoryGenerator from './components/StoryGenerator'
+import { TypewriterEffectSmoothDemo } from './components/Heading'
 
 function App() { 
   return (
      <Router>
       <div className='app-container'>
-        <header>
-          <h1>Interactive Story Generator</h1>
+        <header> 
+          <TypewriterEffectSmoothDemo/>
         </header>
         <main>
           <Routes>

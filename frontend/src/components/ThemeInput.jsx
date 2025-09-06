@@ -15,8 +15,8 @@ function ThemeInput({onSubmit}) {
     }
 
     return <div className="theme-input-container">
-<h2>Generate Your Adventure</h2>
-<p>Enter a theme for your interactive story</p>
+<h2 >Generate Your Adventure</h2>
+<p className="text-purple-400">Enter a theme for your interactive story</p>
 
 <form onSubmit={handleSubmit}>
     <div className="input-group">
