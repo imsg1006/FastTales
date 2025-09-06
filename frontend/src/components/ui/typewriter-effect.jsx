@@ -3,7 +3,6 @@
 import { cn } from "../../lib/utils";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
- 
 
 export const TypewriterEffect = ({ words, className, cursorClassName }) => {
   const wordsArray = words.map((word) => {
@@ -34,17 +33,17 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
   const renderWords = () => (
     <motion.div ref={scope} className="inline">
       {wordsArray.map((word, idx) => (
-        <div key={`word-${idx}`} className="inline-block">
+        <span key={`word-${idx}`} className="inline-block mr-2">
           {word.text.map((char, index) => (
             <motion.span
               initial={{}}
               key={`char-${index}`}
-              className={cn("text-dark opacity-0 hidden", word.className)}
+              className={cn(word.className)}
             >
               {char}
             </motion.span>
           ))}
-        </div>
+        </span>
       ))}
     </motion.div>
   );
@@ -54,12 +53,6 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
       {renderWords()}
       <motion.span
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-          duration: 0.8,
-          repeat: Infinity,
-          repeatType: "reverse",
-        }}
         className={cn("typewriter-cursor", cursorClassName)}
       />
     </div>
@@ -67,14 +60,18 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
 };
 
 export const TypewriterEffectSmooth = ({ words, className, cursorClassName }) => {
-  const wordsArray = words.map((word) => {
-    return { ...word, text: word.text.split("") };
+  // split into characters but add a space explicitly at the end of each word
+  const wordsArray = words.map((word, idx) => {
+    return {
+      ...word,
+      text: [...word.text.split(""), " "], // 👈 ensures spacing
+    };
   });
 
   const renderWords = () => (
     <div>
       {wordsArray.map((word, idx) => (
-        <div key={`word-${idx}`} className="inline-block">
+        <span key={`word-${idx}`} className="inline-block">
           {word.text.map((char, index) => (
             <span
               key={`char-${index}`}
@@ -83,7 +80,7 @@ export const TypewriterEffectSmooth = ({ words, className, cursorClassName }) =>
               {char}
             </span>
           ))}
-        </div>
+        </span>
       ))}
     </div>
   );
@@ -100,8 +97,6 @@ export const TypewriterEffectSmooth = ({ words, className, cursorClassName }) =>
       </motion.div>
       <motion.span
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, repeat: Infinity, repeatType: "reverse" }}
         className={cn("typewriter-smooth-cursor", cursorClassName)}
       />
     </div>

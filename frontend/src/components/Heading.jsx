@@ -8,7 +8,7 @@ export function TypewriterEffectSmoothDemo() {
   },
   {
     text: "Story",
-    className: "word-story",
+    className: "word-interactive",
   },
   {
     text: "Generator",
@@ -18,7 +18,7 @@ export function TypewriterEffectSmoothDemo() {
   return (
     <div className="flex  items-center justify-center  ">
     
-      <TypewriterEffectSmooth className="word-spacing" words={words} />
+      <TypewriterEffectSmooth   words={words} />
       
     </div>
   );
