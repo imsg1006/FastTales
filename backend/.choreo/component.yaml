@@ -9,7 +9,4 @@ endpoints:
       networkVisibilities:
         - Project
         - Public
-dependencies:
-  connectionReferences:
-    - name: gemini-connection
-      resourceRef: thirdparty:gemini/v1
+ 
