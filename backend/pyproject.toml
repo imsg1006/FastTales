@@ -13,3 +13,5 @@ dependencies = [
     "sqlalchemy>=2.0.42",
     "uvicorn>=0.35.0",
 ]
+[tool.setuptools]
+packages = ["db", "core", "models", "routers", "schemas"]
