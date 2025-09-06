@@ -391,14 +391,7 @@ button:hover {
 .error-message button:hover {
   background-color: #d32f2f;
 }
-.word-spacing span {
-  display: inline-block;    
-  margin-right: 0.75rem;   
-}
-
-.word-spacing span:last-child {
-  margin-right: 0;          
-}
+ 
 
 .word-interactive {
   color: #ec4899; /* Tailwind pink-400 */
