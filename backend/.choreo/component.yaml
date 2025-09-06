@@ -10,6 +10,6 @@ endpoints:
         - Project
         - Public
 dependencies:
-    connectionReferences:
-    - name: openai-connection
-      resourceRef: thirdparty:openai/v1
+  connectionReferences:
+    - name: gemini-connection
+      resourceRef: thirdparty:gemini/v1
