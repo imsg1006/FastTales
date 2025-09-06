@@ -416,3 +416,132 @@ button:hover {
 .dark .word-generator {
   color: #3b82f6; /* Tailwind blue-500 (when dark mode is active) */
 }
+
+/* Common utilities */
+.typewriter-container {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem; /* base */
+}
+
+@media (min-width: 640px) {
+  .typewriter-container {
+    font-size: 1.25rem; /* sm:text-xl */
+  }
+}
+
+@media (min-width: 768px) {
+  .typewriter-container {
+    font-size: 1.875rem; /* md:text-3xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  .typewriter-container {
+    font-size: 3rem; /* lg:text-5xl */
+  }
+}
+
+/* Cursor */
+.typewriter-cursor {
+  display: inline-block;
+  border-radius: 0.125rem;
+  width: 4px;
+  height: 1rem; /* h-4 */
+  background-color: #3b82f6; /* blue-500 */
+}
+
+@media (min-width: 768px) {
+  .typewriter-cursor {
+    height: 1.5rem; /* md:h-6 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .typewriter-cursor {
+    height: 2.5rem; /* lg:h-10 */
+  }
+}
+
+/* Smooth effect container */
+.typewriter-smooth-container {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  gap: 0.25rem; /* space-x-1 */
+}
+
+/* Smooth text wrapper */
+.typewriter-smooth-text {
+  font-weight: bold;
+  font-size: 0.75rem; /* text-xs */
+  white-space: nowrap;
+  padding-bottom: 0.5rem; /* pb-2 */
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .typewriter-smooth-text {
+    font-size: 1rem; /* sm:text-base */
+  }
+}
+
+@media (min-width: 768px) {
+  .typewriter-smooth-text {
+    font-size: 1.25rem; /* md:text-xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  .typewriter-smooth-text {
+    font-size: 1.875rem; /* lg:text-3xl */
+  }
+}
+
+@media (min-width: 1280px) {
+  .typewriter-smooth-text {
+    font-size: 3rem; /* xl:text-5xl */
+  }
+}
+
+/* Smooth cursor */
+.typewriter-smooth-cursor {
+  display: block;
+  border-radius: 0.125rem;
+  width: 4px;
+  height: 1rem; /* h-4 */
+  background-color: #3b82f6; /* blue-500 */
+}
+
+@media (min-width: 640px) {
+  .typewriter-smooth-cursor {
+    height: 1.5rem; /* sm:h-6 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .typewriter-smooth-cursor {
+    height: 3rem; /* xl:h-12 */
+  }
+}
+
+/* Dark and light colors */
+.text-dark {
+  color: #000;
+}
+
+.text-light {
+  color: #fff;
+}
+
+.text-pink {
+  color: #ec4899; /* pink-400 */
+}
+
+.text-purple {
+  color: #a855f7; /* purple-500 */
+}
+
+.text-blue-dark {
+  color: #3b82f6; /* blue-500 */
+}
