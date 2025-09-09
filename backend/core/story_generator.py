@@ -15,7 +15,7 @@ class StoryGenerator:
     @classmethod
     def _get_llm(cls):
         genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-        return genai.GenerativeModel('gemini-2.5-pro')
+        return genai.GenerativeModel('gemini-1.5-flash')
 
     @classmethod
     def generate_story(cls, db: Session, session_id: str, theme: str = "fantasy") -> Story:
