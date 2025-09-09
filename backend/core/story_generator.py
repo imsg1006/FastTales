@@ -12,10 +12,18 @@ load_dotenv()
   
 class StoryGenerator:
 
-    @classmethod
+    @classmethod 
     def _get_llm(cls):
-        genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-        return genai.GenerativeModel('gemini-1.5-flash')
+     genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+     return genai.GenerativeModel(
+        'gemini-1.5-flash',
+        generation_config={
+            "temperature": 0.7,
+            "max_output_tokens": 2000,  # Limit output size
+            "top_p": 0.9,
+            "top_k": 40
+        }
+    )
 
     @classmethod
     def generate_story(cls, db: Session, session_id: str, theme: str = "fantasy") -> Story:
