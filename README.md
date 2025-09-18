@@ -8,7 +8,8 @@ FastTales is an interactive story generator where users can create, explore, and
 
 ⚡ Modern Frontend – Built with React, TailwindCSS, ShadCN UI, and Vite for speed.
 
-🔧 Backend with Python and FASTAPI – Scalable APIs for story logic.
+🔧 Backend with Python a
+nd FASTAPI – Scalable APIs for story logic.
 
 🖊 Typewriter Text Effects – Smooth animated text rendering.
 
@@ -74,8 +75,11 @@ Usage in Tailwind for gradient text:
 
 📸 Screenshots (Optional)
 
+ <img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/5ffb0d80-a847-4cfd-8cd3-500aaa892340" />
+<img width="1920" height="1080" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/befc83fa-0124-4294-9ec1-ef86e7ac864c" />
+<img width="1920" height="1080" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/1976ac35-55fc-4cc7-a706-7a44124c9d96" />
+<img width="1920" height="1080" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/29d1fc3d-da98-4348-b3b5-19b60798315a" />
 
-Add screenshots of your landing page, story generator, and theme input boxes here.
 
 🤝 Contributing
 
